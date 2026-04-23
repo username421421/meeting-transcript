@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 71;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000101 /* AppDelegate.swift */; };
+		A00000000000000000000202 /* MeetingTranscriberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000102 /* MeetingTranscriberApp.swift */; };
+		A00000000000000000000203 /* MainWindowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000103 /* MainWindowScene.swift */; };
+		A00000000000000000000204 /* RunRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000104 /* RunRecord.swift */; };
+		A00000000000000000000205 /* RunStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000105 /* RunStatus.swift */; };
+		A00000000000000000000206 /* RunArtifact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000106 /* RunArtifact.swift */; };
+		A00000000000000000000207 /* SpeakerTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000107 /* SpeakerTurn.swift */; };
+		A00000000000000000000208 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000108 /* AppState.swift */; };
+		A00000000000000000000209 /* RunRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000109 /* RunRepository.swift */; };
+		A00000000000000000000210 /* ModelBootstrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000110 /* ModelBootstrapper.swift */; };
+		A00000000000000000000211 /* PipelineCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000111 /* PipelineCoordinator.swift */; };
+		A00000000000000000000212 /* FluidAudioClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000112 /* FluidAudioClient.swift */; };
+		A00000000000000000000213 /* ArtifactWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000113 /* ArtifactWriter.swift */; };
+		A00000000000000000000214 /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000114 /* ImportView.swift */; };
+		A00000000000000000000216 /* TranscriptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000116 /* TranscriptDetailView.swift */; };
+		A00000000000000000000217 /* SpeakerTranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000117 /* SpeakerTranscriptView.swift */; };
+		A00000000000000000000218 /* PlainTranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000118 /* PlainTranscriptView.swift */; };
+		A00000000000000000000219 /* ArtifactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000119 /* ArtifactsView.swift */; };
+		A00000000000000000000221 /* TimecodeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000121 /* TimecodeFormatter.swift */; };
+		A00000000000000000000222 /* FileAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000122 /* FileAccess.swift */; };
+		A00000000000000000000223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000123 /* Assets.xcassets */; };
+		A00000000000000000000224 /* PipelineCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000124 /* PipelineCoordinatorTests.swift */; };
+		A00000000000000000000225 /* ArtifactWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000125 /* ArtifactWriterTests.swift */; };
+		A00000000000000000000226 /* RunRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000126 /* RunRepositoryTests.swift */; };
+		A00000000000000000000227 /* FluidAudio in Frameworks */ = {isa = PBXBuildFile; productRef = A00000000000000000000017 /* FluidAudio */; };
+		A00000000000000000000228 /* FluidAudio in Frameworks */ = {isa = PBXBuildFile; productRef = A00000000000000000000018 /* FluidAudio */; };
+		A00000000000000000000229 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000129 /* L10n.swift */; };
+		A00000000000000000000230 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000130 /* Localizable.strings */; };
+		A00000000000000000000231 /* AppStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000133 /* AppStateTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A00000000000000000000014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000004;
+			remoteInfo = MeetingTranscriber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000021 /* Transcribe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcribe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000022 /* MeetingTranscriberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetingTranscriberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A00000000000000000000102 /* MeetingTranscriberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTranscriberApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000103 /* MainWindowScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowScene.swift; sourceTree = "<group>"; };
+		A00000000000000000000104 /* RunRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunRecord.swift; sourceTree = "<group>"; };
+		A00000000000000000000105 /* RunStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunStatus.swift; sourceTree = "<group>"; };
+		A00000000000000000000106 /* RunArtifact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunArtifact.swift; sourceTree = "<group>"; };
+		A00000000000000000000107 /* SpeakerTurn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerTurn.swift; sourceTree = "<group>"; };
+		A00000000000000000000108 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A00000000000000000000109 /* RunRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunRepository.swift; sourceTree = "<group>"; };
+		A00000000000000000000110 /* ModelBootstrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBootstrapper.swift; sourceTree = "<group>"; };
+		A00000000000000000000111 /* PipelineCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineCoordinator.swift; sourceTree = "<group>"; };
+		A00000000000000000000112 /* FluidAudioClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluidAudioClient.swift; sourceTree = "<group>"; };
+		A00000000000000000000113 /* ArtifactWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactWriter.swift; sourceTree = "<group>"; };
+		A00000000000000000000114 /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
+		A00000000000000000000116 /* TranscriptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptDetailView.swift; sourceTree = "<group>"; };
+		A00000000000000000000117 /* SpeakerTranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerTranscriptView.swift; sourceTree = "<group>"; };
+		A00000000000000000000118 /* PlainTranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTranscriptView.swift; sourceTree = "<group>"; };
+		A00000000000000000000119 /* ArtifactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsView.swift; sourceTree = "<group>"; };
+		A00000000000000000000121 /* TimecodeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimecodeFormatter.swift; sourceTree = "<group>"; };
+		A00000000000000000000122 /* FileAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAccess.swift; sourceTree = "<group>"; };
+		A00000000000000000000123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A00000000000000000000124 /* PipelineCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineCoordinatorTests.swift; sourceTree = "<group>"; };
+		A00000000000000000000125 /* ArtifactWriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactWriterTests.swift; sourceTree = "<group>"; };
+		A00000000000000000000126 /* RunRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunRepositoryTests.swift; sourceTree = "<group>"; };
+		A00000000000000000000129 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		A00000000000000000000131 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A00000000000000000000132 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A00000000000000000000133 /* AppStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000227 /* FluidAudio in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000228 /* FluidAudio in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000023 /* App */,
+				A00000000000000000000024 /* Scenes */,
+				A00000000000000000000025 /* Models */,
+				A00000000000000000000026 /* Stores */,
+				A00000000000000000000027 /* Services */,
+				A00000000000000000000028 /* Features */,
+				A00000000000000000000034 /* Support */,
+				A00000000000000000000035 /* Resources */,
+				A00000000000000000000036 /* Tests/MeetingTranscriberTests */,
+				A00000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000021 /* Transcribe.app */,
+				A00000000000000000000022 /* MeetingTranscriberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000023 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000101 /* AppDelegate.swift */,
+				A00000000000000000000102 /* MeetingTranscriberApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000024 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000103 /* MainWindowScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000025 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000104 /* RunRecord.swift */,
+				A00000000000000000000105 /* RunStatus.swift */,
+				A00000000000000000000106 /* RunArtifact.swift */,
+				A00000000000000000000107 /* SpeakerTurn.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000026 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000108 /* AppState.swift */,
+				A00000000000000000000109 /* RunRepository.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000027 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000110 /* ModelBootstrapper.swift */,
+				A00000000000000000000111 /* PipelineCoordinator.swift */,
+				A00000000000000000000112 /* FluidAudioClient.swift */,
+				A00000000000000000000113 /* ArtifactWriter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000028 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000029 /* Import */,
+				A00000000000000000000031 /* Transcript */,
+				A00000000000000000000032 /* Artifacts */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000029 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000114 /* ImportView.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000031 /* Transcript */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000116 /* TranscriptDetailView.swift */,
+				A00000000000000000000117 /* SpeakerTranscriptView.swift */,
+				A00000000000000000000118 /* PlainTranscriptView.swift */,
+			);
+			path = Transcript;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000032 /* Artifacts */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000119 /* ArtifactsView.swift */,
+			);
+			path = Artifacts;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000034 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000129 /* L10n.swift */,
+				A00000000000000000000121 /* TimecodeFormatter.swift */,
+				A00000000000000000000122 /* FileAccess.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000035 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000123 /* Assets.xcassets */,
+				A00000000000000000000130 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000036 /* Tests/MeetingTranscriberTests */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000124 /* PipelineCoordinatorTests.swift */,
+				A00000000000000000000125 /* ArtifactWriterTests.swift */,
+				A00000000000000000000126 /* RunRepositoryTests.swift */,
+				A00000000000000000000133 /* AppStateTests.swift */,
+			);
+			path = Tests/MeetingTranscriberTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000004 /* MeetingTranscriber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000007 /* Build configuration list for PBXNativeTarget "MeetingTranscriber" */;
+			buildPhases = (
+				A00000000000000000000009 /* Sources */,
+				A00000000000000000000010 /* Frameworks */,
+				A00000000000000000000011 /* Resources */,
+				A00000000000000000000037 /* Stage Bundled Models */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeetingTranscriber;
+			packageProductDependencies = (
+				A00000000000000000000017 /* FluidAudio */,
+			);
+			productName = MeetingTranscriber;
+			productReference = A00000000000000000000021 /* Transcribe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00000000000000000000005 /* MeetingTranscriberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000008 /* Build configuration list for PBXNativeTarget "MeetingTranscriberTests" */;
+			buildPhases = (
+				A00000000000000000000012 /* Sources */,
+				A00000000000000000000013 /* Frameworks */,
+				A00000000000000000000038 /* Sanitize Test Bundle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00000000000000000000015 /* PBXTargetDependency */,
+			);
+			name = MeetingTranscriberTests;
+			packageProductDependencies = (
+				A00000000000000000000018 /* FluidAudio */,
+			);
+			productName = MeetingTranscriberTests;
+			productReference = A00000000000000000000022 /* MeetingTranscriberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					A00000000000000000000004 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					A00000000000000000000005 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = A00000000000000000000004;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000006 /* Build configuration list for PBXProject "MeetingTranscriber" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = A00000000000000000000002;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A00000000000000000000016 /* XCRemoteSwiftPackageReference "FluidAudio" */,
+			);
+			productRefGroup = A00000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000004 /* MeetingTranscriber */,
+				A00000000000000000000005 /* MeetingTranscriberTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000223 /* Assets.xcassets in Resources */,
+				A00000000000000000000230 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A00000000000000000000037 /* Stage Bundled Models */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/script/stage_models.sh",
+			);
+			name = "Stage Bundled Models";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Models/parakeet-tdt-0.6b-v3",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Models/speaker-diarization",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/script/stage_models.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A00000000000000000000038 /* Sanitize Test Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Sanitize Test Bundle";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -n \"$CODESIGNING_FOLDER_PATH\" ]; then\n  xattr -cr \"$CODESIGNING_FOLDER_PATH\"\nfi\nif [ -n \"$TEST_HOST\" ]; then\n  host_app=\"$(dirname \"$(dirname \"$(dirname \"$TEST_HOST\")\")\")\"\n  if [ -d \"$host_app\" ]; then\n    xattr -cr \"$host_app\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000201 /* AppDelegate.swift in Sources */,
+				A00000000000000000000202 /* MeetingTranscriberApp.swift in Sources */,
+				A00000000000000000000203 /* MainWindowScene.swift in Sources */,
+				A00000000000000000000204 /* RunRecord.swift in Sources */,
+				A00000000000000000000205 /* RunStatus.swift in Sources */,
+				A00000000000000000000206 /* RunArtifact.swift in Sources */,
+				A00000000000000000000207 /* SpeakerTurn.swift in Sources */,
+				A00000000000000000000208 /* AppState.swift in Sources */,
+				A00000000000000000000209 /* RunRepository.swift in Sources */,
+				A00000000000000000000210 /* ModelBootstrapper.swift in Sources */,
+				A00000000000000000000211 /* PipelineCoordinator.swift in Sources */,
+				A00000000000000000000212 /* FluidAudioClient.swift in Sources */,
+				A00000000000000000000213 /* ArtifactWriter.swift in Sources */,
+				A00000000000000000000214 /* ImportView.swift in Sources */,
+				A00000000000000000000216 /* TranscriptDetailView.swift in Sources */,
+				A00000000000000000000217 /* SpeakerTranscriptView.swift in Sources */,
+				A00000000000000000000218 /* PlainTranscriptView.swift in Sources */,
+				A00000000000000000000219 /* ArtifactsView.swift in Sources */,
+				A00000000000000000000221 /* TimecodeFormatter.swift in Sources */,
+				A00000000000000000000222 /* FileAccess.swift in Sources */,
+				A00000000000000000000229 /* L10n.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000224 /* PipelineCoordinatorTests.swift in Sources */,
+				A00000000000000000000225 /* ArtifactWriterTests.swift in Sources */,
+				A00000000000000000000226 /* RunRepositoryTests.swift in Sources */,
+				A00000000000000000000231 /* AppStateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A00000000000000000000015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000000004 /* MeetingTranscriber */;
+			targetProxy = A00000000000000000000014 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A00000000000000000000130 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A00000000000000000000131 /* en */,
+				A00000000000000000000132 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4R68K37854;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A00000000000000000000302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4R68K37854;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A00000000000000000000303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Transcribe;
+				INFOPLIST_KEY_CFBundleName = Transcribe;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHighResolutionCapable = YES;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codex.MeetingTranscriber;
+				PRODUCT_NAME = Transcribe;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_MODULE_NAME = MeetingTranscriber;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A00000000000000000000304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Transcribe;
+				INFOPLIST_KEY_CFBundleName = Transcribe;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHighResolutionCapable = YES;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codex.MeetingTranscriber;
+				PRODUCT_NAME = Transcribe;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_MODULE_NAME = MeetingTranscriber;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A00000000000000000000305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codex.MeetingTranscriberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transcribe.app/Contents/MacOS/Transcribe";
+			};
+			name = Debug;
+		};
+		A00000000000000000000306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codex.MeetingTranscriberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transcribe.app/Contents/MacOS/Transcribe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000006 /* Build configuration list for PBXProject "MeetingTranscriber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000301 /* Debug */,
+				A00000000000000000000302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000007 /* Build configuration list for PBXNativeTarget "MeetingTranscriber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000303 /* Debug */,
+				A00000000000000000000304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000008 /* Build configuration list for PBXNativeTarget "MeetingTranscriberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000305 /* Debug */,
+				A00000000000000000000306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A00000000000000000000016 /* XCRemoteSwiftPackageReference "FluidAudio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FluidInference/FluidAudio.git";
+			requirement = {
+				kind = revision;
+				revision = 4ef33f0b64837c2943e8cd0f66940d5861176d6a;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A00000000000000000000017 /* FluidAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000016 /* XCRemoteSwiftPackageReference "FluidAudio" */;
+			productName = FluidAudio;
+		};
+		A00000000000000000000018 /* FluidAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000016 /* XCRemoteSwiftPackageReference "FluidAudio" */;
+			productName = FluidAudio;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A00000000000000000000001 /* Project object */;
+}

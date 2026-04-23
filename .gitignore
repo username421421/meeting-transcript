@@ -1,0 +1,12 @@
+.DS_Store
+.build/
+Build*/
+DerivedData/
+dist/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Local test audio and generated transcript exports
+gui test sample.aiff
+* Transcript/
