@@ -82,6 +82,12 @@ Models/
 
 If bundled models are not present, the app can still build. On first transcription, FluidAudio prepares models in the user's Application Support directory.
 
+## Model Attribution
+
+Speech recognition in this app uses publicly available ASR model artifacts derived from NVIDIA Parakeet-TDT-0.6B-v3, a multilingual automatic speech recognition model published by NVIDIA. The bundled Core ML assets are used through FluidAudio so transcription can run locally on macOS.
+
+This project did not train or create the ASR model. The upstream NVIDIA model card lists Parakeet-TDT-0.6B-v3 under the CC BY 4.0 license, and the FluidInference Core ML model card identifies its base model as `nvidia/parakeet-tdt-0.6b-v3`. See [NOTICE.md](NOTICE.md) for attribution and upstream license links.
+
 ## Supported Audio
 
 The app accepts common audio file types including:
